@@ -1,3 +1,15 @@
 .table {
     margin-top: 50px;
 }
+
+.table-pic {
+    height: 50px;
+    width: 60px;
+}
+
+.cus-pic {
+   font-size: 50px;
+    margin: 0;
+    padding: 0;
+    vertical-align: center;
+}
