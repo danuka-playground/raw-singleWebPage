@@ -1,3 +1,10 @@
 .row {
     margin-left: 30px;
 }
+
+.img-thumbnail {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    border: none;
+}
