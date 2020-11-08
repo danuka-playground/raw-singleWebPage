@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="items.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -68,7 +69,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="../customer/index.html" class="nav-link ">
-                            <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <i class="nav-icon fas fa-users"></i>
                             <p>
                                 Manage Customers
                             </p>
@@ -76,7 +77,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="index.html" class="nav-link ">
-                            <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <i class="nav-icon fas fa-shopping-basket"></i>
                             <p>
                                 Manage Items
                             </p>
@@ -84,7 +85,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="../orders/index.html" class="nav-link ">
-                            <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <i class="nav-icon fas fa-cart-arrow-down"></i>
                             <p>
                                 Manage Orders
                             </p>
@@ -99,6 +100,34 @@
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper bg-white">
+        <div class="card card-primary">
+
+            <!-- /.card-header -->
+            <div class="card-header">
+                <h3 class="card-title">Customer Detail</h3>
+
+            </div><!-- form start -->
+            <form role="form">
+                <div class="card-body form-row">
+                    <div class="form-group col-md-4">
+                        <label for="name">Name</label>
+                        <input type="email" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="address">Address</label>
+                        <input type="password" class="form-control" id="address" placeholder="Address">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="PhoneNumber">Phone Number</label>
+                        <input type="password" class="form-control" id="PhoneNumber" placeholder="Phone number">
+                    </div>
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-user-plus"></i><p class="btn-add">Add Customer</p></button>
+                </div>
+            </form>
 
     </div>
     <aside class="control-sidebar control-sidebar-dark">
