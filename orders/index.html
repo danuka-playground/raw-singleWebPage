@@ -99,7 +99,68 @@
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper bg-white">
+        <div class="card card-primary">
+            <div class="card-header">
+                <h3 class="card-title">Item Detail</h3>
+            </div><!-- form start -->
+            <form role="form">
+                <div class="card-body form-row">
+                    <div class="form-group col-md-4">
+                        <label for="name">Item Description</label>
+                        <input type="email" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="address">Unit Price</label>
+                        <input type="password" class="form-control" id="address" placeholder="Address">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="PhoneNumber">Qty</label>
+                        <input type="password" class="form-control" id="PhoneNumber" placeholder="Phone number">
+                    </div>
+                </div>
+                <!-- /.card-body -->
 
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-plus-square"></i><p class="btn-add">Add Item</p></button>
+                </div>
+            </form>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary"><i class="fas fa-edit"></i><p class="btn-add">Edit Item</p></button>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-trash-alt"></i><p class="btn-add">Delete Item</p></button>
+        </div>
+        <table class="table table-dark table">
+            <thead >
+            <tr class="bg-success">
+                <th scope="col">#</th>
+                <th scope="col">Item Description</th>
+                <th scope="col">Unit Price</th>
+                <th scope="col">Qty</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Otto</td>
+
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>Otto</td>
+
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>Otto</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
     <aside class="control-sidebar control-sidebar-dark">
         <!-- Control sidebar content goes here -->
