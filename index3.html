@@ -17,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="main.css">
+  <script defer src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script defer src="js/main.js"></script>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -59,7 +61,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
-            <a href="index3.html" class="nav-link">
+            <a href="index3.html" class="nav-link" id="dashboardSelect">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -67,15 +69,15 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="customer/index.html" class="nav-link ">
+            <a href="index3.html" class="nav-link" id="customerSelect">
               <i class="nav-icon fas fa-users"></i>
               <p>
-                Manage Customers
+                ManageCustomer
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="Items/index.html" class="nav-link ">
+            <a href="Items/index.html" class="nav-link" id="itemsSelect">
               <i class="nav-icon fas fa-shopping-basket"></i>
               <p>
                 Manage Items
@@ -83,7 +85,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="orders/index.html" class="nav-link ">
+            <a href="orders/index.html" class="nav-link" id="ordersSelect">
              <i class="nav-icon fas fa-cart-arrow-down"></i>
               <p>
                 Manage Orders
@@ -98,8 +100,8 @@
   </aside>
 
   <!-- Main Dash Board ---------------------------------------------------------------------------------------------->
-  <!-- Content Wrapper. Contains page content -->
-<!--  <div class="content-wrapper bg-white">
+
+ <div class="content-wrapper bg-white" id="mainDashBoard">
     <div class="row">
       <div class="col-lg-3 col-xs-6">
         <div class="small-box bg-yellow">
@@ -114,7 +116,6 @@
         </div>
       </div>
       <div class="col-lg-3 col-xs-6">
-        &lt;!&ndash; small box &ndash;&gt;
         <div class="small-box bg-green">
           <div class="inner">
             <h3>53</h3>
@@ -142,15 +143,15 @@
       </div>
     </div>
     <img src="img/WOLF__282_29.jpg" alt="..." class="img-thumbnail">
-  </div>-->
+  </div>
 
   <!-- Item dash board ---------------------------------------------------------------------------------------------->
 
- <!-- <div class="content-wrapper bg-white">
+ <div class="content-wrapper bg-white" id="itemDashBoard">
     <div class="card card-primary">
       <div class="card-header">
         <h3 class="card-title">Item Detail</h3>
-      </div>&lt;!&ndash; form start &ndash;&gt;
+      </div>
       <form role="form">
         <div class="card-body form-row">
           <div class="form-group col-md-4">
@@ -165,9 +166,7 @@
             <label for="PhoneNumber">Qty</label>
             <input type="password" class="form-control" id="PhoneNumber" placeholder="Phone number">
           </div>
-        </div>
-        &lt;!&ndash; /.card-body &ndash;&gt;
-
+        </div>  
         <div class="card-footer">
           <button type="submit" class="btn btn-primary"><i class="fas fa-plus-square"></i><p class="btn-add">Add Item</p></button>
         </div>
@@ -209,15 +208,15 @@
       </tr>
       </tbody>
     </table>
-  </div>-->
+  </div>
 
   <!-- Item dash board ---------------------------------------------------------------------------------------------->
 
-<!--  <div class="content-wrapper bg-white">
+ <div class="content-wrapper bg-white" id="orderDashBoard">
     <div class="card card-primary">
       <div class="card-header">
         <h3 class="card-title">Order Detail</h3>
-      </div>&lt;!&ndash; form start &ndash;&gt;
+      </div>
       <form role="form">
         <div class="card-body form-row">
           <div class="form-group col-md-4">
@@ -241,8 +240,6 @@
             <input type="password" class="form-control" id="Sub-Total" placeholder="Sub Total">
           </div>
         </div>
-        &lt;!&ndash; /.card-body &ndash;&gt;
-
         <div class="card-footer">
           <button type="submit" class="btn btn-primary"><i class="fas fa-plus-square"></i><p class="btn-add">Add Order</p></button>
         </div>
@@ -292,17 +289,15 @@
       </tbody>
     </table>
   </div>
-  -->
+ 
 
   <!-- Customer Dash Board ---------------------------------------------------------------------------------------------->
-  <div class="content-wrapper bg-white">
+  <div class="content-wrapper bg-white" id="customerDashBoard">
     <div class="card card-primary">
-
-      <!-- /.card-header -->
       <div class="card-header">
         <h3 class="card-title">Customer Detail</h3>
 
-      </div><!-- form start -->
+      </div>
       <form role="form">
         <div class="card-body">
           <div class="form-group">
@@ -334,7 +329,6 @@
             <label class="form-check-label" for="exampleCheck1">Agree to conditions</label>
           </div>
         </div>
-        <!-- /.card-body -->
 
         <div class="card-footer">
           <button type="submit" class="btn btn-primary"><i class="fas fa-user-plus"></i><p class="btn-add">Add Customer</p></button>

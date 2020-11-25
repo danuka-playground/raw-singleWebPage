@@ -51,3 +51,15 @@
     display: inline-block;
     margin: 0 10px;
 }
+
+#itemDashBoard {
+    display: none;
+}
+
+#orderDashBoard {
+    display: none;
+}
+
+#customerDashBoard {
+    display: none;
+}
