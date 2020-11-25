@@ -8,3 +8,46 @@
     right: 0;
     border: none;
 }
+
+.fas fa-plus {
+    display: inline-block;
+    margin-right: 5px;
+}
+.btn-add {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.fas fa-plus {
+    display: inline-block;
+    margin-right: 5px;
+}
+.btn-add {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.table {
+    margin-top: 50px;
+}
+
+.table-pic {
+    height: 50px;
+    width: 60px;
+}
+
+.cus-pic {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    vertical-align: center;
+}
+
+.fas fa-plus {
+    display: inline-block;
+    margin-right: 5px;
+}
+.btn-add {
+    display: inline-block;
+    margin: 0 10px;
+}
