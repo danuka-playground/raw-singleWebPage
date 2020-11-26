@@ -8,6 +8,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = merge(superconfig,{
     output:{
+        path:__dirname + '/docs',
         filename:'main.[contenthash].bundle.js'
     },
     plugins: [
