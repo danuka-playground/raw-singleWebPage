@@ -1,44 +1,17 @@
+const merge  = require('webpack-merge');
+const superconfig = require('./webpack.config');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 
-
-
-module.exports = {
-    entry:'./src/index.js',
-    
-    output:{
-        path:__dirname + '/dist',
-        filename: 'main.bundle.js',
-        publicPath:'',
-        assetModuleFilename:'asset/[hash][ext][query]'
+module.exports = merge(superconfig,{
+     devServer: {
+        port:3000
     },
-    module:{
-        rules:[
-            {
-                test:/[.]scss$/,
-                use:[MiniCssExtractPlugin.loader,'css-loader','sass-loader']
-            },
-            {
-                test: /\.(png|jpeg|jpg|gif|svg)$/,
-                type: 'asset/resource'
-            },
-            {
-
-                test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        
-                type: 'asset/resource',
-        
-            },
-        ]
-    },
+    devtool:false,
+    mode:'development',
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'main.min.css',
+            filename: 'main.css',
         })
-    ],
-     devServer: {
-        publicPath: '/dist/',
-        watchContentBase:true
-    },
-    mode:'development'   
-}
+    ]  
+})
