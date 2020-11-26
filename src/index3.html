@@ -7,17 +7,18 @@
 
   <title>Danuka-Brother</title>
 
-  <link rel="stylesheet" href="node_modules/admin-lte/plugins/fontawesome-free/css/all.min.css">
+  <!-- <link rel="stylesheet" href="node_modules/admin-lte/plugins/fontawesome-free/css/all.min.css"> -->
 
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
-  <link rel="stylesheet" href="node_modules/admin-lte/dist/css/adminlte.min.css">
+  <!-- <link rel="stylesheet" href="node_modules/admin-lte/dist/css/adminlte.min.css"> -->
 
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
-  <script defer src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script defer src="dist/main.js"></script>
+  <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="dist/main.min.css"> -->
+  <script defer src="~jquery/dist/jquery.min.js"></script>
+  <!-- <script defer src="dist/main.bundle.js"></script> -->
+  
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -37,7 +38,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-      <img src="node_modules/admin-lte/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+      <img src="~admin-lte/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light">Danuka Brothers</span>
     </a>
@@ -47,7 +48,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="node_modules/admin-lte/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="~admin-lte/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Alexander Pierce</a>
@@ -68,7 +69,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="index3.html" class="nav-link" id="customerSelect">
+            <a href="index3.html" class="nav-link customerSelect" id="customerSelect">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 ManageCustomer
@@ -76,7 +77,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="Items/index.html" class="nav-link" id="itemsSelect">
+            <a href="Items/index.html" class="nav-link itemsSelect" id="itemsSelect">
               <i class="nav-icon fas fa-shopping-basket"></i>
               <p>
                 Manage Items
@@ -84,7 +85,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="orders/index.html" class="nav-link" id="ordersSelect">
+            <a href="orders/index.html" class="nav-link ordersSelect" id="ordersSelect">
              <i class="nav-icon fas fa-cart-arrow-down"></i>
               <p>
                 Manage Orders
@@ -102,7 +103,7 @@
 
  <div class="content-wrapper bg-white" id="mainDashBoard">
     <div class="row">
-      <div class="col-lg-3 col-xs-6">
+      <div class="col-lg-3 col-xs-6" >
         <div class="small-box bg-yellow">
           <div class="inner">
             <h3>44</h3>
@@ -111,7 +112,7 @@
           <div class="icon">
             <i class="ion ion-person-add"></i>
           </div>
-          <a href="customer/index.html" class="small-box-footer">Manage Customer</i></a>
+          <a href="" class="small-box-footer customerSelect" id="customer02">Manage Customer</i></a>
         </div>
       </div>
       <div class="col-lg-3 col-xs-6">
@@ -124,7 +125,7 @@
           <div class="icon">
             <i class="fas fa-shopping-basket"></i>
           </div>
-          <a href="Items/index.html" class="small-box-footer">Manage Items</i></a>
+          <a href="" class="small-box-footer itemsSelect">Manage Items</i></a>
         </div>
       </div>
       <div class="col-lg-3 col-xs-6">
@@ -137,11 +138,11 @@
           <div class="icon">
             <i class="fas fa-cart-plus"></i>
           </div>
-          <a href="orders/index.html" class="small-box-footer">Manage Orders</i></a>
+          <a href="" class="small-box-footer ordersSelect">Manage Orders</i></a>
         </div>
       </div>
     </div>
-    <img src="img/WOLF__282_29.jpg" alt="..." class="img-thumbnail">
+    <img src="./img/WOLF__282_29.jpg" alt="..." class="img-thumbnail">
   </div>
 
   <!-- Item dash board ---------------------------------------------------------------------------------------------->

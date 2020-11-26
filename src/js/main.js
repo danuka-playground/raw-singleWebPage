@@ -1,4 +1,6 @@
-$("#customerSelect").click(function(e){
+import $ from 'jquery';
+
+$(".customerSelect").click(function(e){
     e.preventDefault();
     $("#mainDashBoard").css('display','none');
     $("#orderDashBoard").css('display','none');
@@ -6,7 +8,7 @@ $("#customerSelect").click(function(e){
     $("#customerDashBoard").css('display','block');
 })
 
-$("#itemsSelect").click(function(e){
+$(".itemsSelect").click(function(e){
     e.preventDefault();
     $("#mainDashBoard").css('display','none');
     $("#orderDashBoard").css('display','none');
@@ -14,10 +16,20 @@ $("#itemsSelect").click(function(e){
     $("#customerDashBoard").css('display','none');
 })
 
-$("#ordersSelect").click(function(e){
+$(".ordersSelect").click(function(e){
     e.preventDefault();
     $("#mainDashBoard").css('display','none');
     $("#orderDashBoard").css('display','block');
     $("#itemDashBoard").css('display','none');
     $("#customerDashBoard").css('display','none');
 })
+
+$("#dashboardSelect").click(function(e){
+    e.preventDefault();
+    $("#mainDashBoard").css('display','block');
+    $("#orderDashBoard").css('display','none');
+    $("#itemDashBoard").css('display','none');
+    $("#customerDashBoard").css('display','none');
+})
+
+
